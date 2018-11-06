@@ -26,21 +26,22 @@ reverse = reverse.join()
   end
 end
 
-def palindrome_recursive?(word)
-  counter = 0
-
-
-  prev = word[counter]
-  nextt = word[counter + 1]
-  word[counter] = nextt
-  word[counter + 1] = prev
-  counter += 1
-  if word == palindrome_recursive?(word)
-    return true
-  end
-end
-
-palindrome_recursive?("ROR")
+#BONUS
+# def palindrome_recursive?(word)
+#   counter = 0
+#
+#
+#   prev = word[counter]
+#   nextt = word[counter + 1]
+#   word[counter] = nextt
+#   word[counter + 1] = prev
+#   counter += 1
+#   if word == palindrome_recursive?(word)
+#     return true
+#   end
+# end
+#
+# palindrome_recursive?("ROR")
 
 puts palindrome_index?("Hello")
 puts palindrome_index?("noon")
